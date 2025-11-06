@@ -32,4 +32,8 @@ let getJohnOrders = () => {
   });
 };
 
+function displayData(data) {
+  console.log(data);
+}
 // Start coding here
+getJohnProfile().then(displayData).then(getJohnOrders).then(displayData);
